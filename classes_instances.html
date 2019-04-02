@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class Vs. Instance</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+
+<body>
+    <div id='cssmenu'>
+        <ul class="active">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hacker_rank.html" id="hacker_rank" class="header">Hacker Rank</a></li>
+            <li><a href="codechf.html" id="codechf" class="header">Code Chef</a></li>
+            <li><a href="hacker_earth.html" id="hacker_earth" class="header">Hacker Earth</a></li>
+            <li> <a href="contact.html" class="header" id="contact"><em>About Us.</em></a></li>
+            <li><a href="login.html" class="header" id="login" style="margin-left: 1000px">Login</a></li>
+            <li> <a href="signup.html" class="header" id="signup">Sign Up</a></li>
+        </ul>
+    </div>
+    <div id="sidenav">
+            <ul>
+                    <li><a href="helloworld.html" class="code">Hello World</a></li>
+                    <li><a href="datatypes.html" class="code">Data Types</a></li>
+                    <li><a href="operators.html" class="code">Operators</a></li>
+                    <li><a href="conditional_statements.html" class="code">Conditional statements</a></li>
+                    <li><a href="classes_instances.html" class="code">Classes and Instances</a></li>
+                    <li><a href="Loops.html" class="code">Loops</a></li>
+                    <li><a href="Let's_Review.html" class="code">Let's Review</a></li>
+                    <li><a href="Array.html" class="code">Array</a></li>
+                    <li><a href="Dictionaries_and_Maps.html" class="code">Dictionaries and Maps</a></li>
+                    <li><a href="Recursion.html" class="code">Recursion</a></li>
+                    <li><a href="Binary Numbers.html" class="code">Binary Numbers</a></li>
+                    <li><a href="2D Array.html" class="code">2D Array</a></li>
+                    <li><a href="Inheritance.html" class="code">Inheritance</a></li>
+                    <li><a href="Abstract_class.html" class="code">Abstract class</a></li>
+                    <li><a href="Scope.html" class="code">Scope</a></li>
+                    <li><a href="Linked_List.html" class="code">Linked List</a></li>
+                    <li><a href="Exceptions_Strings_to_Integers.html" class="code">Exceptions: Strings to Integers</a></li>
+                    <li><a href="More_Exceptions.html" class="code">More Exceptions</a></li>
+                    <li><a href="Stacks_and_Queues.html" class="code">Stacks and Queues</a></li>
+                    <li><a href="Interfaces.html" class="code">Interfaces</a></li>
+                    <li><a href="Sorting.html" class="code">Sorting</a></li>
+                    <li><a href="Generics.html" class="code">Generics</a></li>
+                    <li><a href="Binary_Search_Trees.html" class="code">Binary Search Trees</a></li>
+                    <li><a href="BST_Level-Oreder_Transversal.html" class="code">BST Level-Oreder Transversal</a></li>
+                    <li><a href="More_Linked_Lists.html" class="code">More Linked Lists</a></li>
+                    <li><a href="Running_Time_And_Complexity.html" class="code">Running Time And Complexity</a></li>
+                    <li><a href="Nested_Logic.html" class="code">Nested Logic</a></li>
+                    <li><a href="Testing.html" class="code">Testing</a></li>
+                    <li><a href="RegEx_Patterns_and_Intro_to_Databases.html" class="code">RegEx,Patterns, and Intro to Databases</a></li>
+                    <li><a href="Bitwise_AND.html" class="code">Bitwise AND</a></li>
+                </ul>
+            </div>
+    <div class="prblmstat">
+        <h1>Problem Statment</h1>
+        <h2>Objective</h2>
+        In this challenge, we're going to learn about the difference between a class and an instance; because this is an Object Oriented concept, it's only enabled in certain languages.
+
+        <h2>Task</h2>
+        Write a Person class with an instance variable, Age and a constructor that takes an integer, initialAge as a parameter.
+         The constructor must assign initialAge to Age after confirming the argument passed as initialAge  is not negative; if a negative argument is passed as initialAge the constructor should set Age to 0 and print <code>Age is not valid</code>, setting age to 0.. In addition, you must write the following instance methods:
+        <ol>
+            <li>yearPasses() should increase the age instance variable by 1. </li>
+            <li>amIOld() should perform the following conditional actions: 
+                <ul>
+                    <li>If Age &lt; 13 print <code>You are young..</code> </li>
+                    <li>If Age &gt; 13 and Age&lt; 18 print <code>You are a teenager.. </code></li>
+                    <li>Otherwise, print <code>You are old..</code></li>
+                </ul>
+            </li>
+        </ol>
+        To help you learn by example and complete this challenge, much of the code is provided for you, but you'll be writing everything in the future. The code that creates each instance of your Person class is in the main method. Don't worry if you don't understand it all quite yet!
+        <h3>Note:</h3> Do not remove or alter the stub code in the editor.
+        <h2>Input Format</h2>
+        Input is handled for you by the stub code in the editor. <br><br>
+
+The first line contains an integer, T(the number of test cases), and the T subsequent lines each contain an integer denoting the age of a Person instance.
+        <h2>Constraints</h2>
+        1 &le; T &lt; 4 <br>
+        -5 &le; Age &lt; 30
+        <h2>Output Format</h2>
+        Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print 2 or 3 lines 
+        (depending on whether or not a valid initialAge was passed to the constructor).
+        <h2>Sample Input </h2>
+
+        <div><code>4 <br>
+            -1 <br>
+            10 <br>
+            16 <br>
+            18</code></div>
+
+        <h2>Sample Output </h2>
+
+        <div><code>Age is not valid, setting age to 0. <br>
+            You are young. <br>
+            You are young. <br> <br>
+            
+            You are young. <br>
+            You are a teenager. <br><br>
+            
+            You are a teenager. <br>
+            You are old. <br><br>
+            
+            You are old. <br>
+            You are old.</code>
+        </div>
+       
+
+        <h2>Explanation</h2>
+        Test Case 0: initialAge=-1 <br>
+Because initialAge &lt; 0, our code must set Age to and print the "<code>Age is not valid...</code>" message followed by the young message. Three years pass and Age = 3, so we print the young message again. 
+<br> Test Case 1: initialAge = 10 <br>
+Because initialAge &lt; 13 , our code should print that the person is young. Three years pass and Age = 13, so we print that the person is now a teenager. 
+Test Case 2: initialAge = 16 <br>
+Because 13 &le; Age &lt; 18, our code should print that the person is a teenager. Three years pass and Age = 19, so we print that the person is old. 
+Test Case 3: initialAge = 18
+Because initialAge &ge; 18, our code should print that the person is old. Three years pass and the person is still old at Age = 21, so we print the old message again.
+     <br>   <b>The extra line at the end of the output is supposed to be there and is trimmed before being compared against the test case's expected output. If you're failing this challenge, check your logic and review your print statements for spelling errors.</b>
+    </div>
+</body>
+
+</html>

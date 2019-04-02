@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classes and Instances</title>
+    <link rel="stylesheet" href="code.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id='cssmenu'>
+        <ul class="active">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hacker_rank.html" id="hacker_rank" class="header">Hacker Rank</a></li>
+            <li><a href="codechf.html" id="codechf" class="header">Code Chef</a></li>
+            <li><a href="hacker_earth.html" id="hacker_earth" class="header">Hacker Earth</a></li>
+            <li> <a href="contact.html" class="header" id="contact"><em>About Us.</em></a></li>
+            <li><a href="login.html" class="header" id="login" style="margin-left: 1000px">Login</a></li>
+            <li> <a href="signup.html" class="header" id="signup">Sign Up</a></li>
+        </ul>
+    </div>
+    <div id="sidenav">
+            <ul>
+                    <li><a href="helloworld.html" class="code">Hello World</a></li>
+                    <li><a href="datatypes.html" class="code">Data Types</a></li>
+                    <li><a href="operators.html" class="code">Operators</a></li>
+                    <li><a href="conditional_statements.html" class="code">Conditional statements</a></li>
+                    <li><a href="classes_instances.html" class="code">Classes and Instances</a></li>
+                    <li><a href="Loops.html" class="code">Loops</a></li>
+                    <li><a href="Let's_Review.html" class="code">Let's Review</a></li>
+                    <li><a href="Array.html" class="code">Array</a></li>
+                    <li><a href="Dictionaries_and_Maps.html" class="code">Dictionaries and Maps</a></li>
+                    <li><a href="Recursion.html" class="code">Recursion</a></li>
+                    <li><a href="Binary Numbers.html" class="code">Binary Numbers</a></li>
+                    <li><a href="2D Array.html" class="code">2D Array</a></li>
+                    <li><a href="Inheritance.html" class="code">Inheritance</a></li>
+                    <li><a href="Abstract_class.html" class="code">Abstract class</a></li>
+                    <li><a href="Scope.html" class="code">Scope</a></li>
+                    <li><a href="Linked_List.html" class="code">Linked List</a></li>
+                    <li><a href="Exceptions_Strings_to_Integers.html" class="code">Exceptions: Strings to Integers</a></li>
+                    <li><a href="More_Exceptions.html" class="code">More Exceptions</a></li>
+                    <li><a href="Stacks_and_Queues.html" class="code">Stacks and Queues</a></li>
+                    <li><a href="Interfaces.html" class="code">Interfaces</a></li>
+                    <li><a href="Sorting.html" class="code">Sorting</a></li>
+                    <li><a href="Generics.html" class="code">Generics</a></li>
+                    <li><a href="Binary_Search_Trees.html" class="code">Binary Search Trees</a></li>
+                    <li><a href="BST_Level-Oreder_Transversal.html" class="code">BST Level-Oreder Transversal</a></li>
+                    <li><a href="More_Linked_Lists.html" class="code">More Linked Lists</a></li>
+                    <li><a href="Running_Time_And_Complexity.html" class="code">Running Time And Complexity</a></li>
+                    <li><a href="Nested_Logic.html" class="code">Nested Logic</a></li>
+                    <li><a href="Testing.html" class="code">Testing</a></li>
+                    <li><a href="RegEx_Patterns_and_Intro_to_Databases.html" class="code">RegEx,Patterns, and Intro to Databases</a></li>
+                    <li><a href="Bitwise_AND.html" class="code">Bitwise AND</a></li>
+                </ul>
+            </div>
+    <div class="prblmstat">
+        <h1>Problem Statment</h1>
+        <h2>Objective</h2>
+        Today, we're taking what we learned yesterday about Inheritance and extending it to Abstract Classes. Because this is a very specific Object-Oriented concept, submissions are limited to the few languages that use this construct. 
+
+        <h2>Task</h2>
+        Given a Book class and a Solution class, write a MyBook class that does the following: <br>
+        <ul>
+            <li>Inherits from Book</li>
+            <li>Has a parameterized constructor taking these 3 parameters: <br>
+            <ol>
+                <li>string title</li>
+                <li>string author</li>
+                <li>int price</li>
+            </ol></li>
+            <li>Implements the Book class' abstract display() method so it prints these 3 lines: <ol>
+                <li> <code>Title :</code> a space, and then the current instance's title.</li>
+                <li> <code>Author: </code>, a space, and then the current instance's author.</li>
+                <li> <code>Price:</code> , a space, and then the current instance's price.</li>
+            </ol></li>
+        </ul>
+        <h4>Note:</h4> Because these classes are being written in the same file, you must not use an access modifier (e.g.: public) when declaring MyBook or your code will not execute
+        <h2>Input Format</h2>
+        You are not responsible for reading any input from stdin. The Solution class creates a Book object and calls the MyBook class constructor (passing it the necessary arguments). It then calls the display method on the Book object.
+
+        
+        <h2>Output Format</h2>
+        The void display() method should print and label the respective title, author, and price of the MyBook object's instance (with each value on its own line) like so:
+        <div><code>Title: $title <br>
+            Author: $author <br>
+            Price: $price</code></div>
+            <h3>Note: </h3> The $ is prepended to variable names to indicate they are placeholders for variables.
+        <h2>Sample Input</h2>
+        The following input from stdin is handled by the locked stub code in your editor: <br>
+        <div><code>The Alchemist <br>
+            Paulo Coelho <br>
+            248</code></div>
+
+        <h2>Sample Output</h2>
+        The following output is printed by your display() method:
+        <div><code>Title: The Alchemist <br>
+            Author: Paulo Coelho <br>
+            Price: 248</code>
+        </div>
+        
+        
+    </div>
+</body>
+
+</html>
